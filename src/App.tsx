@@ -4,6 +4,8 @@ import BarChartExample from "./components/BarChartExample";
 import LineChartExample from "./components/LineChartExample";
 import PieChartExample from "./components/PieChartExample";
 import AreaChartExample from "./components/AreaChartExample";
+import ComposedChartExample from "./components/ComposedChartExample";
+import ScatterChartExample from "./components/ScatterChartExample";
 
 import { fetchChartData } from "./api/chartApi";
 import type { ChartDataItem } from "./data/chartData";
@@ -102,6 +104,14 @@ function App() {
 
           <ChartCard title="Area Chart">
             <AreaChartExample />
+          </ChartCard>
+
+          <ChartCard title="Composed Chart">
+            <ComposedChartExample />
+          </ChartCard>
+
+          <ChartCard title="Scatter Chart">
+            <ScatterChartExample />
           </ChartCard>
 
         </div>

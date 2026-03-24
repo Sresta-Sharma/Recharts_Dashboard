@@ -1,7 +1,15 @@
 import { useEffect, useState } from "react";
 
 import { RechartsDevtools } from '@recharts/devtools';
-import { Area, AreaChart, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { 
+  Area, 
+  AreaChart, 
+  XAxis, 
+  YAxis, 
+  CartesianGrid, 
+  Tooltip, 
+  ResponsiveContainer,
+ } from 'recharts';
 
 import { fetchChartData } from "../api/chartApi";
 import type { ChartDataItem } from "../data/chartData";

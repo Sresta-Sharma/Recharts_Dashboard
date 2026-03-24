@@ -1,7 +1,16 @@
 import { useEffect, useState } from "react";
 
 import { RechartsDevtools } from '@recharts/devtools';
-import { Bar, BarChart, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { 
+  Bar, 
+  BarChart,
+  XAxis, 
+  YAxis, 
+  CartesianGrid, 
+  Tooltip, 
+  Legend, 
+  ResponsiveContainer,
+ } from 'recharts';
 
 import { fetchChartData } from "../api/chartApi";
 import type { ChartDataItem } from "../data/chartData";

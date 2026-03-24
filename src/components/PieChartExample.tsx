@@ -1,7 +1,12 @@
 import { useEffect, useState } from "react";
 
 import { RechartsDevtools } from '@recharts/devtools';
-import { Pie, PieChart, Tooltip, ResponsiveContainer } from 'recharts';
+import { 
+  Pie, 
+  PieChart, 
+  Tooltip, 
+  ResponsiveContainer,
+ } from 'recharts';
 
 import { fetchChartData } from "../api/chartApi";
 import type { ChartDataItem } from "../data/chartData";
