@@ -20,16 +20,17 @@ function App() {
   type ChartCardProps = {
   title: string;
   children: React.ReactNode;
+  aspect?: string;
   };
 
-  const ChartCard = ({ title, children }: ChartCardProps) => {
+  const ChartCard = ({ title, children, aspect = "aspect-[1.6]" }: ChartCardProps) => {
     return (
       <div className="bg-white rounded-2xl shadow-md p-5">
         <h2 className="text-lg font-semibold text-gray-700 mb-3">
           {title}
         </h2>
 
-        <div className="w-full aspect-[1.6] overflow-hidden">
+        <div className={`w-full ${aspect}`}>
           {children}
         </div>
       </div>
